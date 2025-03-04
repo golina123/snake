@@ -1,23 +1,52 @@
 
-class TView::View
+class view
 {
-	getname();
-	virtual void draw();
+        public:
+        view::getname;
+        virtual const char *getname()=0;
+        virtual void draw() = 0;
+        view *getview(int const char*x);
+}
 
-	private                                                                                                                 v = newTView;       
-	void goloxy(int x, int y);
-        void setcolor(int c);
-        draw()
+view::oview():
+x(0), y(0)
+{
+        fd = open;
+}
+view::cview()
+{
+        close(fd);
+}
+class tview::view
+{
+        public:
+        const char * getname() override
         {
-		void clrscr();
+                return "TView";
+        }
+        virtual void draw() override
+        {
+                clrscr();
+        }
+private
+        v = newtview;
+        void clrscr()
+        {
+        }
+        void goloxy(int x, int y)
+        {
+        }
+        void setcolor(int c)
+        {
         }
 
-}
-class View
-{
-	View::getname;
-	char *getname;
-	virtual void draw() = 0;
-	View *getView(int const char*x);
+
 }
 
+class view
+{                                                                       public:
+        view::getname;
+        virtual const char *getname()=0;
+        virtual void draw() = 0;
+        view *getview(int const char*x);
+}
