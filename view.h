@@ -1,7 +1,13 @@
-class View
+#pragma once
+
+class view
 {
-        View::getname;
-        char *getname;
-        virtual void draw() = 0;
-        View *getView(int const char*x);
-}
+        private:
+                int a;
+        public:
+		virtual void  draw() = 0;
+                static view *getview(const char*x);
+};
+
+
+
