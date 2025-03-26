@@ -6,8 +6,9 @@ int main(int ac, const char *av[])
 {
 
 	model m;
-	view *v = getview(av[1]); //draw			  
+	view *v = view::getview(av[1]); //draw                 
+        v->draw();
         //v->setmodel(&m);
-	//v->run();
+        //v->run();
 
 }
